@@ -1,0 +1,26 @@
+{% extends 'shared_layout.html' %}
+    {% block title%} {%endblock%}
+{% block page_block %}
+<h1></h1>
+    <form method="post"> 
+        <label for="customer_name">Customer Name:</label> 
+        <input type="text" id="customer_name" name="customer_name" required><br>
+        <br>
+        <br>
+        <label for="service">Service:</label> 
+        <select id="service" name="service" required> 
+            <option value="Regular Cleaning">Regular Cleaning</option>
+            <option value="Super Cleaning">Super Cleaning</option> 
+            <option value="Diamond Package">Diamond Package</option> 
+            <option value="Windows Package">Windows Package</option> 
+        </select><br> 
+        <br>
+        <br>
+        <label for="date">Date:</label> 
+        <input type="date" id="date" name="date" required><br>
+        <br>
+        <br> 
+        <button class="button">Book</button>
+    </form> 
+    <a href="/">Back to Home</a>
+{% endblock %}
